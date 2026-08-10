@@ -7,7 +7,7 @@ function Header() {
 
         {/* Logo */}
         <div className="logo">
-          <a href="/">Lee SEO RIN Hub</a>
+          <a href="/">🛰️ Rui Universe 🪐</a>
         </div>
 
         {/* Navigation */}

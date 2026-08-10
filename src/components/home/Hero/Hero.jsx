@@ -3,109 +3,149 @@ import "./Hero.css";
 function Hero() {
   return (
     <section className="hero" id="home">
+      {/* Background */}
+      <div className="hero__background">
+        <div className="hero__grid"></div>
+        <div className="hero__planet planet--1"></div>
+        <div className="hero__planet planet--2"></div>
+      </div>
+
       <div className="hero__container">
+
         {/* Left */}
         <div className="hero__content">
-          <span className="hero__badge">
-            👋 Welcome to my Personal Hub
-          </span>
+
+          <div className="hero__badge">
+            🚀 RUI SPACE LAB
+          </div>
 
           <h1 className="hero__title">
-            Lee SEO RIN
+            Welcome to Rui Space Lab 👨‍🚀
           </h1>
 
-          <h2 className="hero__subtitle">
-            AI Engineer
-            <span> · </span>
-            Developer
-            <span> · </span>
-            Researcher
-          </h2>
-
           <p className="hero__description">
-            Building AI solutions that help people make
-            better decisions.
+            This little corner of the universe is 
             <br />
-            Passionate about Machine Learning,
-            Large Language Models,
-            Cloud Computing,
-            and Software Engineering.
+            where I collect the things that matter to me.
+            <br />
+            <br />
+            Projects I build 💻,
+            <br />
+            Stories I live 📸,
+            <br />
+            Places I explore ✈️,
+            <br />
+            Dreams I chase ⭐
+            <br />
+            and memories I never want to forget.
+            <br />
+            <br />
+            Take your time,
+            <br />
+            look around,
+            <br />
+            and enjoy your stay ✨
           </p>
 
           <div className="hero__buttons">
+
+            <a
+              href="#planet"
+              className="button button--primary"
+            >
+              🚀 Explore My Universe
+            </a>
+
             <a
               href="#projects"
-              className="btn btn-primary"
+              className="button button--secondary"
             >
-              View Projects
+              💾 Visit Projects
             </a>
 
-            <a
-              href="#contact"
-              className="btn btn-secondary"
-            >
-              Contact
-            </a>
           </div>
 
-          <div className="hero__social">
-            <a href="#">
-              GitHub
-            </a>
+          <div className="hero__slogan">
 
-            <a href="#">
-              LinkedIn
-            </a>
+            <div className="hero__line"></div>
 
-            <a href="#">
-              Resume
-            </a>
+            <p>
+              Every planet tells a story..
+            </p>
+
           </div>
+
         </div>
 
         {/* Right */}
-        <div className="hero__visual">
 
-          <div className="hero__circle hero__circle--1"></div>
-          <div className="hero__circle hero__circle--2"></div>
+      <div className="hero__visual">
 
-          <div className="profile-card">
+          <div className="hero__characters">
 
-            <div className="profile-card__avatar">
+            <div className="astronaut">
+              👾
+            </div>
 
-              <div className="avatar">
-                LSR
+            <div className="planet">
+
+              <div className="planet__ring"></div>
+
+              <div className="planet__core">
+                🪐
               </div>
 
             </div>
 
-            <h3>
-              Lee SEO RIN
-            </h3>
+          </div>
 
-            <p>
-              AI Engineer
-            </p>
+          <div className="glass-card">
 
-            <div className="tech-grid">
+            <h3>MISSION STATUS</h3>
 
-              <span>Python</span>
+            <div className="status-online">
+                <span className="status-dot" />
+                <span className="status-text">ONLINE</span>
+            </div>
 
-              <span>React</span>
+            <div className="status-list">
 
-              <span>Azure</span>
+              <div className="status-item">
+                <span>Lab</span>
+                <strong>Rui Space Lab</strong>
+              </div>
 
-              <span>LLM</span>
+              <div className="status-item">
+                <span>Version</span>
+                <strong>v1.0.0</strong>
+              </div>
 
-              <span>FastAPI</span>
+              <div className="status-item">
+                <span>Operator</span>
+                <strong>SEO RIN</strong>
+              </div>
 
-              <span>Docker</span>
+              <div className="status-item">
+                <span>Mission</span>
+                <strong>Life in Progress</strong>
+              </div>
+
+              <div className="status-item">
+                <span>Coords</span>
+                <strong>LP-37.5665°N · ST-126.9780°E</strong>
+              </div>
+
+              <div className="status-item">
+                <span>Status</span>
+                <strong>Exploring...</strong>
+              </div>
 
             </div>
 
           </div>
 
         </div>
+
       </div>
     </section>
   );
