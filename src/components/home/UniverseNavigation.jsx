@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./UniverseNavigation.css";
 
 const destinations = [
@@ -71,9 +72,9 @@ function UniverseNavigation() {
         <div className="universe-navigation__grid">
 
           {destinations.map((destination) => (
-            <a
+            <Link
               key={destination.title}
-              href={destination.path}
+              to={destination.path}
               className={`navigation-card ${destination.className}`}
             >
               <div className="navigation-card__icon">
@@ -100,7 +101,7 @@ function UniverseNavigation() {
                 →
               </span>
 
-            </a>
+            </Link>
           ))}
 
         </div>

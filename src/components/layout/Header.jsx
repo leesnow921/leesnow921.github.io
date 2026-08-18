@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -7,18 +8,37 @@ function Header() {
 
         {/* Logo */}
         <div className="logo">
-          <a href="/">🛰️ Rui Universe 🪐</a>
+          <Link to="/">🛰️ Rui Universe 🪐</Link>
         </div>
 
         {/* Navigation */}
         <nav className="nav">
           <ul className="nav__menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#study">Study</a></li>
-            <li><a href="#daily">Daily</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+
+            <li>
+              <Link to="/study">Study</Link>
+            </li>
+
+            <li>
+              <Link to="/daily">Daily</Link>
+            </li>
+
+            <li>
+              <Link to="/travel">Travel</Link>
+            </li>
+
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+
           </ul>
         </nav>
 
