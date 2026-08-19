@@ -6,6 +6,7 @@
   color: #20242d;
 }
 
+
 /* ========================= */
 /* Container */
 /* ========================= */
@@ -18,6 +19,7 @@
 
   padding: 0 28px;
 }
+
 
 /* ========================= */
 /* Hero */
@@ -76,6 +78,17 @@
   color: #171a21;
 }
 
+.project-detail__subtitle {
+  margin: 20px 0 0;
+
+  font-size: 24px;
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  color: #4f5665;
+}
+
 .project-detail__summary {
   max-width: 720px;
 
@@ -87,6 +100,7 @@
 
   color: #667085;
 }
+
 
 /* ========================= */
 /* Snapshot */
@@ -101,8 +115,7 @@
 .snapshot-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   border-left: 1px solid #e7e9ee;
   border-right: 1px solid #e7e9ee;
@@ -171,6 +184,7 @@
 
   color: #555d6d;
 }
+
 
 /* ========================= */
 /* Content */
@@ -254,6 +268,7 @@
   margin-bottom: 0;
 }
 
+
 /* ========================= */
 /* Highlight */
 /* ========================= */
@@ -286,6 +301,7 @@
   margin: 0;
 }
 
+
 /* ========================= */
 /* List */
 /* ========================= */
@@ -305,6 +321,7 @@
 
   color: #596171;
 }
+
 
 /* ========================= */
 /* Architecture */
@@ -338,6 +355,7 @@
   color: #a0a6b2;
 }
 
+
 /* ========================= */
 /* Development Process */
 /* ========================= */
@@ -345,8 +363,7 @@
 .process-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   gap: 1px;
 
@@ -388,6 +405,53 @@
   line-height: 1.7;
 }
 
+
+/* ========================= */
+/* Development History */
+/* ========================= */
+
+.history-list {
+  margin-top: 40px;
+
+  border-top: 1px solid #dfe2e8;
+}
+
+.history-item {
+  display: grid;
+
+  grid-template-columns: 90px 1fr;
+
+  gap: 30px;
+
+  padding: 36px 0;
+
+  border-bottom: 1px solid #dfe2e8;
+}
+
+.history-year {
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color: #6675e8;
+}
+
+.history-item h3 {
+  margin: 0 0 12px;
+
+  font-size: 20px;
+
+  line-height: 1.4;
+
+  color: #292e39;
+}
+
+.history-item p {
+  margin-bottom: 20px;
+}
+
+
 /* ========================= */
 /* Challenges */
 /* ========================= */
@@ -414,6 +478,61 @@
   margin: 0;
 }
 
+
+/* ========================= */
+/* Supporting Features */
+/* ========================= */
+
+.supporting-feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1px;
+
+  margin-top: 40px;
+
+  background: #dfe2e8;
+
+  border: 1px solid #dfe2e8;
+}
+
+.supporting-feature {
+  min-height: 180px;
+
+  padding: 28px;
+
+  background: #ffffff;
+}
+
+.supporting-feature__number {
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  color: #a0a6b2;
+}
+
+.supporting-feature h3 {
+  margin: 0 0 10px;
+
+  font-size: 18px;
+
+  color: #292e39;
+}
+
+.supporting-feature p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
 /* ========================= */
 /* Results */
 /* ========================= */
@@ -421,8 +540,7 @@
 .result-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 1px;
 
@@ -454,10 +572,12 @@
   font-weight: 700;
 
   letter-spacing: 1px;
+
   text-transform: uppercase;
 
   color: #8a91a0;
 }
+
 
 /* ========================= */
 /* Footer */
@@ -483,6 +603,7 @@
 .project-detail__footer a:hover {
   color: #20242d;
 }
+
 
 /* ========================= */
 /* Not Found */
@@ -514,6 +635,7 @@
   color: #6675e8;
 }
 
+
 /* ========================= */
 /* Responsive */
 /* ========================= */
@@ -521,8 +643,7 @@
 @media (max-width: 800px) {
 
   .snapshot-grid {
-    grid-template-columns:
-      repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .snapshot-item:nth-child(2) {
@@ -544,7 +665,17 @@
     padding: 0;
   }
 
+  .history-item {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .supporting-feature-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
 
 @media (max-width: 600px) {
 
@@ -564,6 +695,10 @@
     font-size: 48px;
 
     letter-spacing: -2px;
+  }
+
+  .project-detail__subtitle {
+    font-size: 20px;
   }
 
   .project-detail__summary {
@@ -601,4 +736,7 @@
     grid-template-columns: 1fr;
   }
 
+  .supporting-feature-grid {
+    grid-template-columns: 1fr;
+  }
 }
